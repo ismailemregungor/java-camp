@@ -5,42 +5,40 @@ import Abstract.Entity;
 public class Store implements Entity{
 	
 	private int id;
-	private String name;
-	private double unitPrice;
+	private int itemId;
+	
 	
 	public Store() {
 		
 	}
 
-	public Store(int id, String name, double unitPrice) {
+
+	public Store(int id, int itemId) {
 		super();
 		this.id = id;
-		this.name = name;
-		this.unitPrice = unitPrice;
+		this.itemId = itemId;
 	}
+
 
 	public int getId() {
 		return id;
 	}
 
+
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+
+	public int getItemId() {
+		return itemId;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
 	}
 
-	public double getUnitPrice() {
-		return unitPrice;
-	}
-
-	public void setUnitPrice(double unitPrice) {
-		this.unitPrice = unitPrice;
-	}
-
+	
+	
 }
