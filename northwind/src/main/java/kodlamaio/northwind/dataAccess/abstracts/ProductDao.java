@@ -33,9 +33,9 @@ public interface ProductDao extends JpaRepository<Product,Integer>{
 	  List<ProductWithCategoryDto> getProductWithCategoryDetails();
 	  
 	  /* Sql deki bu işleme karşılık gelir
-	   * select p.product_id, p.product_name,
-	   *  c.category_name from Category c inner join 
-	   *  Product pon c.categoryId = p.productId
+	   *select p.product_id, p.product_name, 
+	   *c.category_name from categories c 
+	   *inner join products p on c.category_id = p.product_id
 	   */
 	  
 
